@@ -1,0 +1,8 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<OSDM_Design class="oracle.dbtools.crest.model.design.Design" name="RhythmiCore" id="28779B1E-9F6F-2A62-1947-8C7FF3A8C81C" version="3.5">
+<createdBy>Alexandra</createdBy>
+<createdTime>2023-10-20 09:24:05 UTC</createdTime>
+<ownerDesignName>RhythmiCore</ownerDesignName>
+<capitalNames>false</capitalNames>
+<designId>28779B1E-9F6F-2A62-1947-8C7FF3A8C81C</designId>
+</OSDM_Design>
