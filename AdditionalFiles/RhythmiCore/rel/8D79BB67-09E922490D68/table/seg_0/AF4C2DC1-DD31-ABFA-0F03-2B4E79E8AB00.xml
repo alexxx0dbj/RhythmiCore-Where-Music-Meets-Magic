@@ -1,0 +1,89 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="AF4C2DC1-DD31-ABFA-0F03-2B4E79E8AB00" name="RatingMelodie">
+<createdBy>Alexandra</createdBy>
+<createdTime>2023-11-16 19:51:56 UTC</createdTime>
+<generatorID>E2184DD9-5449-0466-CF1C-A7DC231D5D7F</generatorID>
+<ownerDesignName>RhythmiCore</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="rating" id="55DA49AF-5783-FA25-C475-A4F7680DFD4B">
+<createdBy>Alexandra</createdBy>
+<createdTime>2023-11-16 19:51:56 UTC</createdTime>
+<generatorID>93A41C71-6AEE-1BBA-D630-9962E8F2BA27</generatorID>
+<ownerDesignName>RhythmiCore</ownerDesignName>
+<constraintName>RatingMelodie_rating_ck</constraintName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>3</dataTypePrecision>
+<dataTypeScale>2</dataTypeScale>
+<ownDataTypeParameters>,3,2</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<listOfRanges>
+<rangeDef class="oracle.dbtools.crest.model.design.constraint.AVT">
+<beginValue>0</beginValue>
+<endValue>5</endValue>
+</rangeDef>
+</listOfRanges>
+</Column>
+<Column name="numar_voturi" id="BEAEC3C5-B053-0824-0A63-46BF4DF1A9FC">
+<createdBy>Alexandra</createdBy>
+<createdTime>2023-11-16 19:51:56 UTC</createdTime>
+<generatorID>CF3BF425-8D1F-A66F-DC47-349EE02A73B5</generatorID>
+<ownerDesignName>RhythmiCore</ownerDesignName>
+<constraintName>RatingMelodie_numar_voturi_ck</constraintName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>3</dataTypePrecision>
+<checkConstraint>
+<implementationDef dbType="Generic Constraint" definition="numar_voturi &gt;= 0"/>
+</checkConstraint>
+<ownDataTypeParameters>,3,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="ID_melodie" id="278BB47E-BD00-EDC5-EB63-9CEAF59EEC49">
+<createdBy>Alexandra</createdBy>
+<createdTime>2023-12-15 09:02:15 UTC</createdTime>
+<generatorID>804A02B5-4DBE-855C-5927-BBAED2216525</generatorID>
+<ownerDesignName>RhythmiCore</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>3</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="73D4B590-DE23-48F1-D1FE-C06CD39AC588" referredColumn="AD228DD1-62AC-0FC0-2231-4B362B9E6E8C"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="AE8E969D-989C-AD1F-7AAC-E1AD1AD7D80D" name="RatingMelodie__IDX">
+<createdBy>Alexandra</createdBy>
+<createdTime>2023-12-15 09:02:15 UTC</createdTime>
+<ownerDesignName>RhythmiCore</ownerDesignName>
+<indexState>Unique Plain Index</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<relationGeneratorID>B9D70129-350C-872A-15E0-181EBE95A32F</relationGeneratorID>
+<indexColumnUsage>
+<colUsage columnID="278BB47E-BD00-EDC5-EB63-9CEAF59EEC49"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="C0CDEDE7-AE2E-F90A-38F9-AF6351FC5CFE" name="melodie_ratingMelodie_fk">
+<createdBy>Alexandra</createdBy>
+<createdTime>2023-12-15 09:02:15 UTC</createdTime>
+<generatorID>B9D70129-350C-872A-15E0-181EBE95A32F</generatorID>
+<ownerDesignName>RhythmiCore</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="278BB47E-BD00-EDC5-EB63-9CEAF59EEC49"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

@@ -1,0 +1,21 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="utilizator_bu_fk" directorySegmentName="seg_0" id="7DCFD37B-489E-D23C-3085-FE8439B2CDE7">
+<createdBy>Goriuc Antonia</createdBy>
+<createdTime>2023-11-15 20:50:06 UTC</createdTime>
+<ownerDesignName>RhythmiCore</ownerDesignName>
+<engineerTo>
+<item key="8D79BB67-E010-B1BB-8FA3-09E922490D68" value="true"/>
+</engineerTo>
+<sourcePk>C4123194-5288-6156-B457-B22DFCE6785E</sourcePk>
+<identifying>false</identifying>
+<nameOnSource>are</nameOnSource>
+<nameOnTarget>corespunde</nameOnTarget>
+<optionalSource>true</optionalSource>
+<optionalTarget>false</optionalTarget>
+<sourceCardinality>1</sourceCardinality>
+<sourceEntity>217D30C1-0764-FF58-CDE7-2879A771B4C8</sourceEntity>
+<targetCardinalityString>*</targetCardinalityString>
+<targetEntity>E2F3C350-E759-8151-C435-952D169D7444</targetEntity>
+<transferable>true</transferable>
+<deleteRule>NO ACTION</deleteRule>
+</Relation>

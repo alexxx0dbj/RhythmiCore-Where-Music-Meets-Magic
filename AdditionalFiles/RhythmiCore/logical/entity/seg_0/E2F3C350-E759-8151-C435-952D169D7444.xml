@@ -1,0 +1,98 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="E2F3C350-E759-8151-C435-952D169D7444" name="BilbiotecaUtilizator">
+<createdBy>Alexandra</createdBy>
+<createdTime>2023-10-20 10:19:33 UTC</createdTime>
+<ownerDesignName>RhythmiCore</ownerDesignName>
+<engineerTo>
+<item key="8D79BB67-E010-B1BB-8FA3-09E922490D68" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="ID_biblioteca_utilizator" id="A125F3C7-EBCA-86CE-73A3-6A7BBD241892">
+<createdBy>Alexandra</createdBy>
+<createdTime>2023-10-20 10:20:23 UTC</createdTime>
+<ownerDesignName>RhythmiCore</ownerDesignName>
+<engineerTo>
+<item key="8D79BB67-E010-B1BB-8FA3-09E922490D68" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>3</dataTypePrecision>
+<ownDataTypeParameters>,3,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="ID_utilizator" id="485194B9-4CD8-5D7A-AD27-8B99A3BF5299">
+<createdBy>Goriuc Antonia</createdBy>
+<createdTime>2023-11-15 20:50:06 UTC</createdTime>
+<generatorID>7DCFD37B-489E-D23C-3085-FE8439B2CDE7</generatorID>
+<ownerDesignName>RhythmiCore</ownerDesignName>
+<engineerTo>
+<item key="8D79BB67-E010-B1BB-8FA3-09E922490D68" value="true"/>
+</engineerTo>
+<referedAttribute>21A3A8B6-09D2-8E0E-9D06-A73FA395891B</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>3</dataTypePrecision>
+<ownDataTypeParameters>,3,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="ID_melodie" id="0F571A68-41B9-189F-15D2-D95FB7C193A1">
+<createdBy>Goriuc Antonia</createdBy>
+<createdTime>2023-11-15 20:51:52 UTC</createdTime>
+<generatorID>99F3B716-C7B7-7D1E-2DF1-A9BF1F610233</generatorID>
+<ownerDesignName>RhythmiCore</ownerDesignName>
+<engineerTo>
+<item key="8D79BB67-E010-B1BB-8FA3-09E922490D68" value="true"/>
+</engineerTo>
+<referedAttribute>A5B15CD1-E171-DAD9-9831-00150022B9C7</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>3</dataTypePrecision>
+<ownDataTypeParameters>,3,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="nota" id="A542A80D-BC4D-CD5F-5673-4E21CECBE99F">
+<createdBy>Alexandra</createdBy>
+<createdTime>2023-12-14 15:52:20 UTC</createdTime>
+<ownerDesignName>RhythmiCore</ownerDesignName>
+<engineerTo>
+<item key="8D79BB67-E010-B1BB-8FA3-09E922490D68" value="true"/>
+</engineerTo>
+<constraintName>nota</constraintName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>3</dataTypePrecision>
+<dataTypeScale>2</dataTypeScale>
+<ownDataTypeParameters>,3,2</ownDataTypeParameters>
+<listOfRanges>
+<rangeDef class="oracle.dbtools.crest.model.design.constraint.AVT">
+<beginValue>0</beginValue>
+<endValue>5</endValue>
+</rangeDef>
+</listOfRanges>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="C7A75E57-4209-C7E4-BA27-AAEE27C02C9A" name="BIBLIOTECA UTILIZATOR PK">
+<createdBy>Alexandra</createdBy>
+<createdTime>2023-10-20 10:20:58 UTC</createdTime>
+<ownerDesignName>RhythmiCore</ownerDesignName>
+<shouldEngineer>false</shouldEngineer>
+<engineerTo>
+<item key="8D79BB67-E010-B1BB-8FA3-09E922490D68" value="false"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>A125F3C7-EBCA-86CE-73A3-6A7BBD241892</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

@@ -1,0 +1,109 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="8FD42E19-BB6A-CE28-28E0-AAE9F0F80474" name="Utilizator">
+<createdBy>Alexandra</createdBy>
+<createdTime>2023-11-16 19:51:56 UTC</createdTime>
+<generatorID>217D30C1-0764-FF58-CDE7-2879A771B4C8</generatorID>
+<ownerDesignName>RhythmiCore</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="ID_utilizator" id="4338AF98-E5AE-3049-C7F3-47AAA2957525">
+<createdBy>Alexandra</createdBy>
+<createdTime>2023-11-16 19:51:56 UTC</createdTime>
+<generatorID>21A3A8B6-09D2-8E0E-9D06-A73FA395891B</generatorID>
+<ownerDesignName>RhythmiCore</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>3</dataTypePrecision>
+<ownDataTypeParameters>,3,</ownDataTypeParameters>
+<autoIncrementColumn>true</autoIncrementColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="nume" id="66D73C56-FF3C-F071-B7DB-B9D584A5E7C2">
+<createdBy>Alexandra</createdBy>
+<createdTime>2023-11-16 19:51:56 UTC</createdTime>
+<generatorID>616525D7-C482-A0AC-2639-EC3B8C942CC0</generatorID>
+<ownerDesignName>RhythmiCore</ownerDesignName>
+<constraintName>Utilizator_nume_ck</constraintName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>30</dataTypeSize>
+<checkConstraint>
+<implementationDef dbType="Generic Constraint" definition="regexp_like(nume, &apos;^[a-zA-Z.-]&apos;)"/>
+</checkConstraint>
+<ownDataTypeParameters>30,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="parola" id="FF7C29F3-F44A-C8A6-85E0-071A3FB0E69A">
+<createdBy>Alexandra</createdBy>
+<createdTime>2023-11-16 19:51:56 UTC</createdTime>
+<generatorID>8FE4FA6A-FA00-5256-593C-2CFA4C72FFA1</generatorID>
+<ownerDesignName>RhythmiCore</ownerDesignName>
+<constraintName>Utilizator_parola_ck</constraintName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>30</dataTypeSize>
+<checkConstraint>
+<implementationDef dbType="Generic Constraint" definition="LENGTH(parola) &gt; 8"/>
+</checkConstraint>
+<ownDataTypeParameters>30,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="email" id="E9AA8FAF-093D-B299-E8C5-20EF1E58AE87">
+<createdBy>Alexandra</createdBy>
+<createdTime>2023-11-16 19:51:56 UTC</createdTime>
+<generatorID>8744D917-F117-FD42-D524-CD0DE4B3E4FC</generatorID>
+<ownerDesignName>RhythmiCore</ownerDesignName>
+<constraintName>Utilizator_email_ck</constraintName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>30</dataTypeSize>
+<checkConstraint>
+<implementationDef dbType="Generic Constraint" definition="regexp_like(email, &apos;[a-z0-9._%-]+@[a-z0-9._%-]+\.[a-z]{2,4}&apos;)"/>
+</checkConstraint>
+<ownDataTypeParameters>30,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="FB2F0057-2341-6608-1B4A-F6F9066D0DA1" name="UTILIZATOR_PK">
+<createdBy>Alexandra</createdBy>
+<createdTime>2023-11-16 19:51:56 UTC</createdTime>
+<generatorID>C4123194-5288-6156-B457-B22DFCE6785E</generatorID>
+<ownerDesignName>RhythmiCore</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="4338AF98-E5AE-3049-C7F3-47AAA2957525"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="98AD4767-82AB-EEEB-256B-925CCC02DC4C" name="UTILIZATOR_Nume_Utilizator_uk">
+<createdBy>Alexandra</createdBy>
+<createdTime>2023-11-16 19:51:56 UTC</createdTime>
+<generatorID>1462FD3F-74B7-8179-662C-9E59ED534643</generatorID>
+<ownerDesignName>RhythmiCore</ownerDesignName>
+<indexState>Unique Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="66D73C56-FF3C-F071-B7DB-B9D584A5E7C2"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="D7047981-4F8C-B81B-0836-4F639975553A" name="UTILIZATOR_Adresa_Email_uk">
+<createdBy>Alexandra</createdBy>
+<createdTime>2023-11-16 19:51:56 UTC</createdTime>
+<generatorID>B5054C2F-A3CC-E923-C703-BDDE552BE25D</generatorID>
+<ownerDesignName>RhythmiCore</ownerDesignName>
+<indexState>Unique Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="E9AA8FAF-093D-B299-E8C5-20EF1E58AE87"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

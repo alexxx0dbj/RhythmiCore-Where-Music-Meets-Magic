@@ -1,0 +1,7 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<LogicalDesign class="oracle.dbtools.crest.model.design.logical.LogicalDesign" name="Logical" id="5285BEFA-38D9-C691-B23A-9A018DF61C83" mainViewID="251F981A-985D-11B6-F7AC-D0CA9A93FAD3">
+<createdBy>Alexandra</createdBy>
+<createdTime>2023-10-20 09:24:05 UTC</createdTime>
+<ownerDesignName>RhythmiCore</ownerDesignName>
+<shouldBeOpen>false</shouldBeOpen>
+</LogicalDesign>

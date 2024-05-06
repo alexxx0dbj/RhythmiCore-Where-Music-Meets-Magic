@@ -1,0 +1,36 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="DetaliiGenuri" directorySegmentName="seg_0" id="9BDD8E83-1576-9DA6-D028-130564714487">
+<createdBy>Goriuc Antonia</createdBy>
+<createdTime>2023-11-15 20:52:59 UTC</createdTime>
+<ownerDesignName>RhythmiCore</ownerDesignName>
+<engineerTo>
+<item key="8D79BB67-E010-B1BB-8FA3-09E922490D68" value="true"/>
+</engineerTo>
+<identifying>false</identifying>
+<nameOnSource>descrie</nameOnSource>
+<nameOnTarget>are</nameOnTarget>
+<optionalSource>true</optionalSource>
+<optionalTarget>false</optionalTarget>
+<sourceCardinality>*</sourceCardinality>
+<sourceEntity>0F3FBD8D-F684-BFD8-E04F-D0033F389BD1</sourceEntity>
+<targetCardinalityString>*</targetCardinalityString>
+<targetEntity>E8CEC28D-D7AF-BE5D-09F0-733BDE95A42A</targetEntity>
+<transferable>true</transferable>
+<deleteRule>NO ACTION</deleteRule>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<attribute name="descriere" id="A9A1142F-1892-53DF-D94C-2F8E023FCD9C">
+<createdBy>Goriuc Antonia</createdBy>
+<createdTime>2023-11-15 20:54:24 UTC</createdTime>
+<ownerDesignName>RhythmiCore</ownerDesignName>
+<engineerTo>
+<item key="8D79BB67-E010-B1BB-8FA3-09E922490D68" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>30</dataTypeSize>
+<ownDataTypeParameters>30,,</ownDataTypeParameters>
+</attribute>
+</attributes>
+</Relation>

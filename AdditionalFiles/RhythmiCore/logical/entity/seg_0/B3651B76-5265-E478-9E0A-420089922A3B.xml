@@ -1,0 +1,64 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="B3651B76-5265-E478-9E0A-420089922A3B" name="Album">
+<createdBy>Alexandra</createdBy>
+<createdTime>2023-10-20 10:37:22 UTC</createdTime>
+<ownerDesignName>RhythmiCore</ownerDesignName>
+<engineerTo>
+<item key="8D79BB67-E010-B1BB-8FA3-09E922490D68" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="ID_album" id="EED3D0BB-9F29-D98D-C180-3936D55338A4">
+<createdBy>Alexandra</createdBy>
+<createdTime>2023-10-20 10:37:30 UTC</createdTime>
+<ownerDesignName>RhythmiCore</ownerDesignName>
+<engineerTo>
+<item key="8D79BB67-E010-B1BB-8FA3-09E922490D68" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>3</dataTypePrecision>
+<ownDataTypeParameters>,3,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="nume" id="9E8ADA13-5B61-C11F-588D-C3B3D99CAEAF">
+<createdBy>Alexandra</createdBy>
+<createdTime>2023-10-20 10:37:47 UTC</createdTime>
+<ownerDesignName>RhythmiCore</ownerDesignName>
+<engineerTo>
+<item key="8D79BB67-E010-B1BB-8FA3-09E922490D68" value="true"/>
+</engineerTo>
+<constraintName>Album_nume_ck</constraintName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>30</dataTypeSize>
+<checkConstraint>
+<implementationDef dbType="Generic Constraint" definition="regexp_like(nume, &apos;[a-zA-Z0-9.!?$&amp;%-]{1,}&apos;)"/>
+</checkConstraint>
+<ownDataTypeParameters>30,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="974274B9-75E2-BFA9-E449-084A9A3A7B4C" name="ALBUM PK">
+<createdBy>Alexandra</createdBy>
+<createdTime>2023-10-20 10:37:41 UTC</createdTime>
+<ownerDesignName>RhythmiCore</ownerDesignName>
+<shouldEngineer>false</shouldEngineer>
+<engineerTo>
+<item key="8D79BB67-E010-B1BB-8FA3-09E922490D68" value="false"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>EED3D0BB-9F29-D98D-C180-3936D55338A4</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

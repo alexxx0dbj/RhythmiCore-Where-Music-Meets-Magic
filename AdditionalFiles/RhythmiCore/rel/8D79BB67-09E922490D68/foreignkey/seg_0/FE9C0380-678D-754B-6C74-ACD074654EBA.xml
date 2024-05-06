@@ -1,0 +1,17 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="FE9C0380-678D-754B-6C74-ACD074654EBA" containerWithKeyObject="19E6B7A1-7E89-69DD-E514-E02A5CD8C48A" localFKIndex="B2F48785-FD43-6DE0-9E01-A9673434468B" name="utilizator_bu_fk">
+<createdBy>Alexandra</createdBy>
+<createdTime>2023-11-16 19:51:56 UTC</createdTime>
+<generatorID>7DCFD37B-489E-D23C-3085-FE8439B2CDE7</generatorID>
+<ownerDesignName>RhythmiCore</ownerDesignName>
+<referredTableLongName>Utilizator</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>8FD42E19-BB6A-CE28-28E0-AAE9F0F80474</referredTableID>
+<keyObject>FB2F0057-2341-6608-1B4A-F6F9066D0DA1</keyObject>
+<referredKeyID>FB2F0057-2341-6608-1B4A-F6F9066D0DA1</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>ID_utilizator</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

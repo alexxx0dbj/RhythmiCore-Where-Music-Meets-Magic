@@ -1,0 +1,91 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="5509ABC1-178E-AFB3-6331-B458B457AB24" name="DetaliiGenuri">
+<createdBy>Alexandra</createdBy>
+<createdTime>2023-11-16 19:51:56 UTC</createdTime>
+<ownerDesignName>RhythmiCore</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="GenMuzical_ID_gen_muzical" id="9ADD85AE-08DC-C3E1-C967-ED5056BA9E50">
+<createdBy>Alexandra</createdBy>
+<createdTime>2023-11-16 19:51:56 UTC</createdTime>
+<ownerDesignName>RhythmiCore</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>3</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="6999AE6A-ADEF-C938-CBF2-470664E6C321" referredColumn="8A26F880-5B15-810D-CC31-96FC425D98F9"/>
+</associations>
+</Column>
+<Column name="Melodie_ID_melodie" id="4E291CEC-E80A-5B4A-DAB6-07C33CDF679F">
+<createdBy>Alexandra</createdBy>
+<createdTime>2023-11-16 19:51:56 UTC</createdTime>
+<ownerDesignName>RhythmiCore</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>3</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="3A1EDED9-1B82-06ED-FD0A-E38E469E2EED" referredColumn="AD228DD1-62AC-0FC0-2231-4B362B9E6E8C"/>
+</associations>
+</Column>
+<Column name="descriere" id="A811C2B5-7F99-DF07-C4A9-CC4D8535A745">
+<createdBy>Alexandra</createdBy>
+<createdTime>2023-11-16 19:51:56 UTC</createdTime>
+<generatorID>A9A1142F-1892-53DF-D94C-2F8E023FCD9C</generatorID>
+<ownerDesignName>RhythmiCore</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>30</dataTypeSize>
+<ownDataTypeParameters>30,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<isRelationshipColumn>true</isRelationshipColumn>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="DEF5AB68-E2AF-2B00-677C-DB149FEC0B85" name="DetaliiGenuri_PK">
+<createdBy>Alexandra</createdBy>
+<createdTime>2023-11-16 19:51:56 UTC</createdTime>
+<ownerDesignName>RhythmiCore</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="9ADD85AE-08DC-C3E1-C967-ED5056BA9E50"/>
+<colUsage columnID="4E291CEC-E80A-5B4A-DAB6-07C33CDF679F"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="B224E8A6-137A-AB82-DF99-B2463A29BC71" name="DetaliiGenuri_GenMuzical_FK">
+<createdBy>Alexandra</createdBy>
+<createdTime>2023-11-16 19:51:56 UTC</createdTime>
+<generatorID>9BDD8E83-1576-9DA6-D028-130564714487</generatorID>
+<ownerDesignName>RhythmiCore</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="9ADD85AE-08DC-C3E1-C967-ED5056BA9E50"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="DF2D2AF8-0EB5-D293-E39A-8546FF0E0975" name="DetaliiGenuri_Melodie_FK">
+<createdBy>Alexandra</createdBy>
+<createdTime>2023-11-16 19:51:56 UTC</createdTime>
+<generatorID>9BDD8E83-1576-9DA6-D028-130564714487</generatorID>
+<ownerDesignName>RhythmiCore</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="4E291CEC-E80A-5B4A-DAB6-07C33CDF679F"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

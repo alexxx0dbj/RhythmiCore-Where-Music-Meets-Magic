@@ -1,0 +1,66 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="AA0044F6-A629-7771-FF17-198EDA6A6117" name="Artist">
+<createdBy>Alexandra</createdBy>
+<createdTime>2023-11-16 19:51:56 UTC</createdTime>
+<generatorID>86C968F1-A3D9-7124-2D98-27056911A1F5</generatorID>
+<ownerDesignName>RhythmiCore</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="ID_artist" id="791C9A0E-19B0-A2F7-A02D-0D8D95E92CB3">
+<createdBy>Alexandra</createdBy>
+<createdTime>2023-11-16 19:51:56 UTC</createdTime>
+<generatorID>C76B0583-1234-5FD3-A10D-D0970E9E02EC</generatorID>
+<ownerDesignName>RhythmiCore</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>3</dataTypePrecision>
+<ownDataTypeParameters>,3,</ownDataTypeParameters>
+<autoIncrementColumn>true</autoIncrementColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="nume" id="64F6C4A0-077B-C0BB-7ADD-BBD7F492D3DB">
+<createdBy>Alexandra</createdBy>
+<createdTime>2023-11-16 19:51:56 UTC</createdTime>
+<generatorID>4D6E1999-F704-69B3-8F47-6E8833CDE98D</generatorID>
+<ownerDesignName>RhythmiCore</ownerDesignName>
+<constraintName>Artist_nume_ck</constraintName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>30</dataTypeSize>
+<checkConstraint>
+<implementationDef dbType="Generic Constraint" definition="regexp_like(nume, &apos;[a-zA-Z0-9.!?$&amp;%-]{1,}&apos;)"/>
+</checkConstraint>
+<ownDataTypeParameters>30,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="18CFE66F-DC31-3164-1932-E6644E818602" name="ARTIST_PK">
+<createdBy>Alexandra</createdBy>
+<createdTime>2023-11-16 19:51:56 UTC</createdTime>
+<generatorID>18D5323B-9DEE-2586-9614-EA21DB72E130</generatorID>
+<ownerDesignName>RhythmiCore</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="791C9A0E-19B0-A2F7-A02D-0D8D95E92CB3"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="81A96708-C7C7-8911-935F-FDB1C6FC603A" name="ARTIST_Nume_Artist_uk">
+<createdBy>Alexandra</createdBy>
+<createdTime>2023-11-16 19:51:56 UTC</createdTime>
+<generatorID>8A31B0AD-07E5-84E0-1A57-E27FF82335BD</generatorID>
+<ownerDesignName>RhythmiCore</ownerDesignName>
+<indexState>Unique Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="64F6C4A0-077B-C0BB-7ADD-BBD7F492D3DB"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

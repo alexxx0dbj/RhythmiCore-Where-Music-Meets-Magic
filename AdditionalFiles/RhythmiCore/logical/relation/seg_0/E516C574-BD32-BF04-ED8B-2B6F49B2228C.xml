@@ -1,0 +1,21 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="melodie_detaliiMelodie_fk" directorySegmentName="seg_0" id="E516C574-BD32-BF04-ED8B-2B6F49B2228C">
+<createdBy>Goriuc Antonia</createdBy>
+<createdTime>2023-11-15 20:39:33 UTC</createdTime>
+<ownerDesignName>RhythmiCore</ownerDesignName>
+<engineerTo>
+<item key="8D79BB67-E010-B1BB-8FA3-09E922490D68" value="true"/>
+</engineerTo>
+<sourcePk>BE5ED1C4-7724-EE66-C1CE-9D203BECDE40</sourcePk>
+<identifying>false</identifying>
+<nameOnSource>are</nameOnSource>
+<nameOnTarget>contine</nameOnTarget>
+<optionalSource>false</optionalSource>
+<optionalTarget>false</optionalTarget>
+<sourceCardinality>1</sourceCardinality>
+<sourceEntity>E8CEC28D-D7AF-BE5D-09F0-733BDE95A42A</sourceEntity>
+<targetCardinalityString>*</targetCardinalityString>
+<targetEntity>EBD671A6-39E5-F91C-90BF-FE4468BA4CAC</targetEntity>
+<transferable>true</transferable>
+<deleteRule>NO ACTION</deleteRule>
+</Relation>

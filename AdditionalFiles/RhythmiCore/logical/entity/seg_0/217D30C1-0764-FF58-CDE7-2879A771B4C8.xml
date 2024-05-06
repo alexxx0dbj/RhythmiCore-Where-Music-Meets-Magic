@@ -1,0 +1,124 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="217D30C1-0764-FF58-CDE7-2879A771B4C8" name="Utilizator">
+<createdBy>Alexandra</createdBy>
+<createdTime>2023-10-20 09:50:38 UTC</createdTime>
+<ownerDesignName>RhythmiCore</ownerDesignName>
+<engineerTo>
+<item key="8D79BB67-E010-B1BB-8FA3-09E922490D68" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="ID_utilizator" id="21A3A8B6-09D2-8E0E-9D06-A73FA395891B">
+<createdBy>Alexandra</createdBy>
+<createdTime>2023-10-20 09:51:04 UTC</createdTime>
+<ownerDesignName>RhythmiCore</ownerDesignName>
+<engineerTo>
+<item key="8D79BB67-E010-B1BB-8FA3-09E922490D68" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>3</dataTypePrecision>
+<ownDataTypeParameters>,3,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="nume" id="616525D7-C482-A0AC-2639-EC3B8C942CC0">
+<createdBy>Alexandra</createdBy>
+<createdTime>2023-10-20 10:17:26 UTC</createdTime>
+<ownerDesignName>RhythmiCore</ownerDesignName>
+<engineerTo>
+<item key="8D79BB67-E010-B1BB-8FA3-09E922490D68" value="true"/>
+</engineerTo>
+<constraintName>Utilizator_nume_ck</constraintName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>30</dataTypeSize>
+<checkConstraint>
+<implementationDef dbType="Generic Constraint" definition="regexp_like(nume, &apos;^[a-zA-Z.-]&apos;)"/>
+</checkConstraint>
+<ownDataTypeParameters>30,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="parola" id="8FE4FA6A-FA00-5256-593C-2CFA4C72FFA1">
+<createdBy>Alexandra</createdBy>
+<createdTime>2023-10-20 10:17:43 UTC</createdTime>
+<ownerDesignName>RhythmiCore</ownerDesignName>
+<engineerTo>
+<item key="8D79BB67-E010-B1BB-8FA3-09E922490D68" value="true"/>
+</engineerTo>
+<constraintName>Utilizator_parola_ck</constraintName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>30</dataTypeSize>
+<checkConstraint>
+<implementationDef dbType="Generic Constraint" definition="LENGTH(parola) &gt; 8"/>
+</checkConstraint>
+<ownDataTypeParameters>30,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="email" id="8744D917-F117-FD42-D524-CD0DE4B3E4FC">
+<createdBy>Alexandra</createdBy>
+<createdTime>2023-10-20 10:18:39 UTC</createdTime>
+<ownerDesignName>RhythmiCore</ownerDesignName>
+<engineerTo>
+<item key="8D79BB67-E010-B1BB-8FA3-09E922490D68" value="true"/>
+</engineerTo>
+<constraintName>Utilizator_email_ck</constraintName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>30</dataTypeSize>
+<checkConstraint>
+<implementationDef dbType="Generic Constraint" definition="regexp_like(email, &apos;[a-z0-9._%-]+@[a-z0-9._%-]+\.[a-z]{2,4}&apos;)"/>
+</checkConstraint>
+<ownDataTypeParameters>30,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="C4123194-5288-6156-B457-B22DFCE6785E" name="UTILIZATOR PK">
+<createdBy>Alexandra</createdBy>
+<createdTime>2023-10-20 10:16:41 UTC</createdTime>
+<ownerDesignName>RhythmiCore</ownerDesignName>
+<shouldEngineer>false</shouldEngineer>
+<engineerTo>
+<item key="8D79BB67-E010-B1BB-8FA3-09E922490D68" value="false"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>21A3A8B6-09D2-8E0E-9D06-A73FA395891B</attributeRef>
+</usedAttributes>
+</identifier>
+<identifier id="1462FD3F-74B7-8179-662C-9E59ED534643" name="UTILIZATOR_Nume_Utilizator_uk">
+<createdBy>Alexandra</createdBy>
+<createdTime>2023-11-02 10:26:21 UTC</createdTime>
+<ownerDesignName>RhythmiCore</ownerDesignName>
+<shouldEngineer>false</shouldEngineer>
+<engineerTo>
+<item key="8D79BB67-E010-B1BB-8FA3-09E922490D68" value="false"/>
+</engineerTo>
+<newElementsIDs>616525D7-C482-A0AC-2639-EC3B8C942CC0</newElementsIDs>
+<usedAttributes>
+<attributeRef>616525D7-C482-A0AC-2639-EC3B8C942CC0</attributeRef>
+</usedAttributes>
+</identifier>
+<identifier id="B5054C2F-A3CC-E923-C703-BDDE552BE25D" name="UTILIZATOR_Adresa_Email_uk">
+<createdBy>Alexandra</createdBy>
+<createdTime>2023-11-02 10:32:19 UTC</createdTime>
+<ownerDesignName>RhythmiCore</ownerDesignName>
+<shouldEngineer>false</shouldEngineer>
+<engineerTo>
+<item key="8D79BB67-E010-B1BB-8FA3-09E922490D68" value="false"/>
+</engineerTo>
+<newElementsIDs>8744D917-F117-FD42-D524-CD0DE4B3E4FC</newElementsIDs>
+<usedAttributes>
+<attributeRef>8744D917-F117-FD42-D524-CD0DE4B3E4FC</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

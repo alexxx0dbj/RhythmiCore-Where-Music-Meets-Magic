@@ -1,0 +1,79 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="4FFE0E07-7D5D-D501-70F1-67807D108549" name="GenMuzical">
+<createdBy>Alexandra</createdBy>
+<createdTime>2023-11-16 19:51:56 UTC</createdTime>
+<generatorID>0F3FBD8D-F684-BFD8-E04F-D0033F389BD1</generatorID>
+<ownerDesignName>RhythmiCore</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="ID_gen_muzical" id="8A26F880-5B15-810D-CC31-96FC425D98F9">
+<createdBy>Alexandra</createdBy>
+<createdTime>2023-11-16 19:51:56 UTC</createdTime>
+<generatorID>D7058116-1887-7DD7-B03A-CC3E6B67F7B6</generatorID>
+<ownerDesignName>RhythmiCore</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>3</dataTypePrecision>
+<ownDataTypeParameters>,3,</ownDataTypeParameters>
+<autoIncrementColumn>true</autoIncrementColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="nume" id="0212A7B2-E9D4-811E-11DC-B8E64C8D6A96">
+<createdBy>Alexandra</createdBy>
+<createdTime>2023-11-16 19:51:56 UTC</createdTime>
+<generatorID>2C38B6FF-5617-AD26-3730-E9B3EA15B942</generatorID>
+<ownerDesignName>RhythmiCore</ownerDesignName>
+<constraintName>GenMuzical_nume_ck</constraintName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>30</dataTypeSize>
+<checkConstraint>
+<implementationDef dbType="Generic Constraint" definition="regexp_like(nume, &apos;[a-zA-Z0-9.-]{1,}&apos;)"/>
+</checkConstraint>
+<ownDataTypeParameters>30,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="detalii" id="1D5CC434-402C-8118-B953-9D825C7F3F8D">
+<createdBy>Alexandra</createdBy>
+<createdTime>2023-11-16 19:51:56 UTC</createdTime>
+<generatorID>60486B8B-91D4-79DE-C916-D8A8A0DC5F42</generatorID>
+<ownerDesignName>RhythmiCore</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>60</dataTypeSize>
+<ownDataTypeParameters>60,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="836D028C-A365-3C0A-4530-4C677A51C65C" name="Gen_Muzical_PK">
+<createdBy>Alexandra</createdBy>
+<createdTime>2023-11-16 19:51:56 UTC</createdTime>
+<generatorID>39225E83-167F-0984-0414-9ED8E8E38730</generatorID>
+<ownerDesignName>RhythmiCore</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="8A26F880-5B15-810D-CC31-96FC425D98F9"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="EC737C73-DA45-F8C4-154A-287141B78F92" name="GEN_MUZICAL_Nume_Gen_uk">
+<createdBy>Alexandra</createdBy>
+<createdTime>2023-11-16 19:51:56 UTC</createdTime>
+<generatorID>A3733A50-F68E-7676-DB34-11BB1D9A1AA8</generatorID>
+<ownerDesignName>RhythmiCore</ownerDesignName>
+<indexState>Unique Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="0212A7B2-E9D4-811E-11DC-B8E64C8D6A96"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

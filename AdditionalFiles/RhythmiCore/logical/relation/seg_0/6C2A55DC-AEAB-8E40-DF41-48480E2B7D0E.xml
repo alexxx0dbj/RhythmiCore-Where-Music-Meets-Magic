@@ -1,0 +1,21 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="artist_detaliiMelodie_fk" directorySegmentName="seg_0" id="6C2A55DC-AEAB-8E40-DF41-48480E2B7D0E">
+<createdBy>Goriuc Antonia</createdBy>
+<createdTime>2023-11-15 20:36:32 UTC</createdTime>
+<ownerDesignName>RhythmiCore</ownerDesignName>
+<engineerTo>
+<item key="8D79BB67-E010-B1BB-8FA3-09E922490D68" value="true"/>
+</engineerTo>
+<sourcePk>18D5323B-9DEE-2586-9614-EA21DB72E130</sourcePk>
+<identifying>false</identifying>
+<nameOnSource>are</nameOnSource>
+<nameOnTarget>contine</nameOnTarget>
+<optionalSource>true</optionalSource>
+<optionalTarget>false</optionalTarget>
+<sourceCardinality>1</sourceCardinality>
+<sourceEntity>86C968F1-A3D9-7124-2D98-27056911A1F5</sourceEntity>
+<targetCardinalityString>*</targetCardinalityString>
+<targetEntity>EBD671A6-39E5-F91C-90BF-FE4468BA4CAC</targetEntity>
+<transferable>true</transferable>
+<deleteRule>NO ACTION</deleteRule>
+</Relation>

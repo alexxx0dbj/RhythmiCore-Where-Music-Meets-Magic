@@ -1,0 +1,17 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="E0890E9B-C8C5-FDD0-DA2B-D684B4F942A7" containerWithKeyObject="5D7F8CCC-3496-AA27-C4AB-7133E5591AC9" localFKIndex="AED3BFD1-9F4F-AF0F-CF92-B7E43648CE55" name="melodie_detaliiMelodie_fk">
+<createdBy>Alexandra</createdBy>
+<createdTime>2023-11-16 19:51:56 UTC</createdTime>
+<generatorID>E516C574-BD32-BF04-ED8B-2B6F49B2228C</generatorID>
+<ownerDesignName>RhythmiCore</ownerDesignName>
+<referredTableLongName>Melodie</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>C0796BA6-C7C5-E7B9-19B7-A30A93780ECE</referredTableID>
+<keyObject>D056FE6D-BD3F-7018-812B-9A96F14312D4</keyObject>
+<referredKeyID>D056FE6D-BD3F-7018-812B-9A96F14312D4</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>ID_melodie</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

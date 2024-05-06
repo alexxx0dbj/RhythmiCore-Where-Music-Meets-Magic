@@ -1,0 +1,77 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="86C968F1-A3D9-7124-2D98-27056911A1F5" name="Artist">
+<createdBy>Alexandra</createdBy>
+<createdTime>2023-10-20 10:35:54 UTC</createdTime>
+<ownerDesignName>RhythmiCore</ownerDesignName>
+<engineerTo>
+<item key="8D79BB67-E010-B1BB-8FA3-09E922490D68" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="ID_artist" id="C76B0583-1234-5FD3-A10D-D0970E9E02EC">
+<createdBy>Alexandra</createdBy>
+<createdTime>2023-10-20 10:36:02 UTC</createdTime>
+<ownerDesignName>RhythmiCore</ownerDesignName>
+<engineerTo>
+<item key="8D79BB67-E010-B1BB-8FA3-09E922490D68" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>3</dataTypePrecision>
+<ownDataTypeParameters>,3,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="nume" id="4D6E1999-F704-69B3-8F47-6E8833CDE98D">
+<createdBy>Alexandra</createdBy>
+<createdTime>2023-10-20 10:36:18 UTC</createdTime>
+<ownerDesignName>RhythmiCore</ownerDesignName>
+<engineerTo>
+<item key="8D79BB67-E010-B1BB-8FA3-09E922490D68" value="true"/>
+</engineerTo>
+<constraintName>Artist_nume_ck</constraintName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>30</dataTypeSize>
+<checkConstraint>
+<implementationDef dbType="Generic Constraint" definition="regexp_like(nume, &apos;[a-zA-Z0-9.!?$&amp;%-]{1,}&apos;)"/>
+</checkConstraint>
+<ownDataTypeParameters>30,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="18D5323B-9DEE-2586-9614-EA21DB72E130" name="ARTIST PK">
+<createdBy>Alexandra</createdBy>
+<createdTime>2023-10-20 10:36:15 UTC</createdTime>
+<ownerDesignName>RhythmiCore</ownerDesignName>
+<shouldEngineer>false</shouldEngineer>
+<engineerTo>
+<item key="8D79BB67-E010-B1BB-8FA3-09E922490D68" value="false"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>C76B0583-1234-5FD3-A10D-D0970E9E02EC</attributeRef>
+</usedAttributes>
+</identifier>
+<identifier id="8A31B0AD-07E5-84E0-1A57-E27FF82335BD" name="ARTIST_Nume_Artist_uk">
+<createdBy>Alexandra</createdBy>
+<createdTime>2023-11-02 10:37:25 UTC</createdTime>
+<ownerDesignName>RhythmiCore</ownerDesignName>
+<shouldEngineer>false</shouldEngineer>
+<engineerTo>
+<item key="8D79BB67-E010-B1BB-8FA3-09E922490D68" value="false"/>
+</engineerTo>
+<newElementsIDs>4D6E1999-F704-69B3-8F47-6E8833CDE98D</newElementsIDs>
+<usedAttributes>
+<attributeRef>4D6E1999-F704-69B3-8F47-6E8833CDE98D</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>
